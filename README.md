@@ -4,6 +4,8 @@ Welcome to LazizKitchen, a chatbot project that integrates Dialogflow, FastAPI, 
 
 ## Project Overview
 
+![Website Image with ChatBot](Images/LazizKitchen_1.png)
+
 The project primarily utilizes three key components: Dialogflow, FastAPI, and a MySQL database. Dialogflow is employed for natural language processing, FastAPI serves as the backend framework, and MySQL stores essential data for order management.
 
 ### Features
