@@ -1,4 +1,6 @@
 # LazizKitchen: ChatBot
+[![ChatBot](https://img.shields.io/badge/ChatBot-Active-brightgreen)](https://your-chatbot-url) [![NLP](https://img.shields.io/badge/NLP-Enabled-blue)](https://your-nlp-url) [![FastAPI](https://img.shields.io/badge/FastAPI-Integrated-orange)](https://fastapi.tiangolo.com/) [![Dialogflow](https://img.shields.io/badge/Dialogflow-Connected-blueviolet)](https://dialogflow.com/) [![MySQL](https://img.shields.io/badge/MySQL-Used-blue)](https://www.mysql.com/) [![Data Science](https://img.shields.io/badge/Data%20Science-Applied-brightgreen)](https://your-datascience-url)
+
 
 Welcome to LazizKitchen, a chatbot project that integrates Dialogflow, FastAPI, and MySQL to create a seamless conversational experience. This repository houses the code for the chatbot, including the FastAPI backend, the Dialogflow training assets, and the static website.
 
