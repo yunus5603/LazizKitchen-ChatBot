@@ -18,13 +18,15 @@ The project primarily utilizes three key components: Dialogflow, FastAPI, and a 
 
 ## Directory Structure
 
-- **backend**: Contains the FastAPI backend code responsible for handling chatbot requests.
+- **Backend**: Contains the FastAPI backend code responsible for handling chatbot requests.
   
-- **db**: Includes the MySQL database dump. Import this dump into your MySQL database using tools like MySQL Workbench.
+- **DataBase**: Includes the MySQL database dump. Import this dump into your MySQL database using tools like MySQL Workbench.
 
-- **dialogflow_assets**: Holds the training phrases and other assets used to train the Dialogflow intents.
+- **Dialogflow_Asets**: Holds the training phrases and other assets used to train the Dialogflow intents.
 
-- **frontend**: Houses the code for the static website, providing a user-friendly interface for interacting with the chatbot.
+- **Frontend**: Houses the code for the static website, providing a user-friendly interface for interacting with the chatbot.
+
+- **Images**: Contains the snapshot of website and chatbot.
 
 ## Installation
 
@@ -38,10 +40,10 @@ pip install "fastapi[all]"
 Alternatively, you can install both modules at once by running:
 
 ```bash
-pip install -r backend/requirements.txt
+pip install -r Backend/requirements.txt
 ```
 
-##Starting the FastAPI Backend Server
+## Starting the FastAPI Backend Server
 
 Follow these steps to launch the FastAPI backend server:
 
@@ -51,9 +53,11 @@ Follow these steps to launch the FastAPI backend server:
 uvicorn main:app --reload
 ```
 
-##Ngrok for HTTPS Tunneling
+## Ngrok for HTTPS Tunneling
 
-Ngrok is utilized for HTTPS tunneling to expose your local server to the internet. Follow these steps to set up Ngrok:
+Using Ngrok to expose our local server to the internet, and we want to set up a fulfillment webhook in Dialogflow to communicate with our local server, we need to use the Ngrok-provided public URL.
+
+Follow these steps to set up Ngrok:
 
 1. Visit https://ngrok.com/download to download Ngrok for your operating system.
 2. Extract the zip file and place ngrok.exe in a folder.
@@ -62,7 +66,7 @@ Ngrok is utilized for HTTPS tunneling to expose your local server to the interne
 ```bash
 ngrok http 8000
 ```
-**Note:** Ngrok sessions can timeout. If you encounter a session expired message, restart the session.
+**Note:** Ngrok sessions timeout after every 2 hours. If you encounter a session expired message, restart the session.
 
 Feel free to explore the directories and customize the chatbot according to your needs. If you have any questions or encounter issues, please refer to the documentation or reach out to the community for support.
 
